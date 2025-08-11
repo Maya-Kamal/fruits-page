@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <script>
+        // A Function called by the button's 'onclick' attribute.
+        function scrollToHome() {
+            // Find the element with the ID 'home'
+            const home_element = document.getElementById('home');
+
+            if (home_element) {
+                // Scroll smoothly to the element
+                home_element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+    <!-- Go to top button -->
+    <button id="btn-home" onclick="scrollToHome()">Go to Top</button>
+
+    <!-- Grey Part -->
+    <div class="grey">
+
+        <header>
+            <!-- Navigation Bar -->
+            <nav>
+                <div class="logo" id="home">
+                    <img src="images/logo.png" alt="Fruits Shop Logo">
+                    <span>Fruits Shop</span>
+                </div>
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#fruits">Fruits</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><img src="images/search.png"></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Content -->
+
+        <!-- Welcome Part -->
+        <div class="welcome">
+            <div class="welcome-text">
+                <h1>Welcome to <br> Our Fruits Shop</h1>
+
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don’t look even slightly
+                    believable.</p>
+                <button id="btn-shop">shop now</button>
+                <button id="btn-contact">contact us</button>
+            </div>
+            <img id="welcome_pic" src="images/dish.png">
+
+        </div>
+
+
+    </div>
+
+    <!-- Services Part -->
+    <div class="center-services" id="services">
+
+        <h2 class="service-title">Our Services</h2>
+        <p id="service-text">There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+        <div class="service-box-container">
+
+            <div class="service-box">
+                <img src="images/item1.png">
+                <p class="service-subtitle">Orange</p>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don’t look even slightly
+                    believable. </p>
+            </div>
+            <div class="service-box">
+                <img src="images/item2.png">
+                <p class="service-subtitle">Grapes</p>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don’t look even slightly
+                    believable. </p>
+
+            </div>
+            <div class="service-box">
+                <img src="images/item.png">
+                <p class="service-subtitle">Guava</p>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don’t look even slightly
+                    believable. </p>
+
+            </div>
+
+        </div>
+        <button id="btn-read"> Read More </button>
+
+    </div>
+
+    <!-- Fruits Part -->
+    <div class="fruits" id="fruits">
+
+        <div class="center-fruits">
+            <h2 class="fruits-title">Fresh Fruits</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+        </div>
+        <div class="fruits-container">
+
+            <div class="fruits-orange">
+                <div class="fruits-text">
+
+                    <p class="fruits-subtitle">Best Fresh Orange</p>
+                    <p class="fruits-text">but the majority have suffered alteration in some form, by injected humour,
+                        or randomised words which don’t look even slightly believable. If you are going to use a passage
+                        of Lorem Ipsum. You need to be</p>
+                    <button class="btn-buy"> Buy Now </button>
+                </div>
+                <img src="images/orange.png">
+
+            </div>
+
+            <div class="fruits-grapes">
+                <div class="fruits-text">
+
+                    <p class="fruits-subtitle">Best Fresh Grapes</p>
+                    <p class="fruits-text">but the majority have suffered alteration in some form, by injected humour,
+                        or randomised words which don’t look even slightly believable. If you are going to use a passage
+                        of Lorem Ipsum. You need to be</p>
+                    <button class="btn-buy"> Buy Now </button>
+                </div>
+                <img src="images/grapes.png">
+
+            </div>
+
+            <div class="fruits-guava">
+                <div class="fruits-text">
+                    <p class="fruits-subtitle">Best Fresh Guava</p>
+                    <p class="fruits-text">but the majority have suffered alteration in some form, by injected humour,
+                        or randomised words which don’t look even slightly believable. If you are going to use a passage
+                        of Lorem Ipsum. You need to be</p>
+                    <button class="btn-buy"> Buy Now </button>
+                </div>
+                <img src="images/gauva.png">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Wide Picture -->
+    <div class="wide">
+
+        <p id="wide-text">very tasty fruits</p>
+        <img id="wide-pic" src="images/tasty.png" alt="Tasty">
+    </div>
+
+    <!-- Testimonial -->
+    <div class="center-test">
+        <h2 class="client-title">Testimonial</h2>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+        <img id="client-pic" src="images/client.png" alt="Client Picture">
+        <p id="client-name"> Johnex </p>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+            some form, by injected humour,
+            or randomised words which don’t look even slightly believable. If you are
+            going to use a passage of Lorem Ipsum. You need to be sure
+        </p>
+    </div>
+
+    <div class="contact-form" id="contact">
+        <form action="" method="GET">
+            <h2 class="contact-title">Contact Us</h2>
+            <input type="text" id="name" placeholder="Name" autocomplete="off">
+
+            <input type="tel" id="phone" placeholder="Phone Number" autocomplete="off">
+
+            <input type="email" id="email" placeholder="Email" autocomplete="off">
+
+            <input type="text" id="msg" placeholder="Message" autocomplete="off">
+
+            <input id="submit" type="submit" value="send">
+        </form>
+
+        <img src="images/orange-dish.png" alt="Orange Dish" id="orange-dish">
+    </div>
+
+    <div class="contact-media">
+        <div class="col">
+            <p class="col-title">Fruits</p>
+            <p>randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem
+                Ipsum. </p>
+        </div>
+        <div class="col">
+            <p class="col-title">Services</p>
+            <p>randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem
+                Ipsum. </p>
+        </div>
+        <div class="col">
+            <p class="col-title">List</p>
+            <p>randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem
+                Ipsum. </p>
+        </div>
+        <div class="col">
+            <p class="col-title">Follow Us</p>
+            <div class="logos">
+                <a href="https://facebook.com" target="_blank"> <img src="images/fb.png" alt="Facebook"> </a>
+                <a href="https://x.com" target="_blank"> <img src="images/twitter.png" alt="Twitter"> </a>
+                <a href="https://linkedin.com" target="_blank"> <img src="images/linkedin.png" alt="Linkedin"> </a>
+                <a href="https://instagram.com" target="_blank"> <img src="images/instagram.png" alt="Instagram"> </a>
+            </div>
+
+            <div class="subscribe">
+                <p class="col-title">Subscribe Now</p>
+                <input type="text" id="sub-field">
+                <input type="submit" value="Subscribe" id="btn-sub">
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p id="footer"> Copy Right &copy All Rights Reserved </p>
+    </footer>
+
+</body>
+
+</html>

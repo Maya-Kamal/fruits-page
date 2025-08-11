@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.grey {
+    background-color: #fafafa;
+    padding-bottom: 7rem;
+}
+
+.client-title,
+.fruits-title,
+.service-title,
+.contact-title {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+#btn-home {
+    font-size: 1em;
+    color: white;
+    background-color: #ff5a00;
+    border: none;
+    border-radius: 10%;
+    position: fixed;
+    right: 2vw;
+    bottom: 2vh;
+    z-index: 100;
+    padding: 0.3em 0.5em;
+}
+
+#btn-home:hover {
+    background-color: rgba(255, 90, 0, 0.8);
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    padding: 0.625rem clamp(1rem, 10vw, 12.5rem);
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav .logo span {
+    font-size: 1.3rem;
+    padding-left: 0.625rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    right: 0.625rem;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    padding: 2rem;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li img {
+    width: 1.25rem;
+}
+
+/* Welcome Part */
+.welcome {
+    display: flex;
+    align-items: center;
+    margin: 6% 7.5rem;
+}
+
+.welcome-text {
+    width: 40%;
+}
+
+.welcome-text h1 {
+    font-size: 3rem;
+    /* Fluid font size */
+}
+
+.welcome-text p {
+    margin: 7% 0;
+    font-size: 1.1rem;
+}
+
+.welcome-text button {
+    text-transform: uppercase;
+    padding: 0.625rem 1.25rem;
+    color: white;
+    border: none;
+}
+
+#btn-shop {
+    background-color: #ff5a00;
+}
+
+#btn-contact,
+.btn-buy {
+    background-color: #000;
+    margin-left: 1%;
+}
+
+#welcome_pic {
+    width: min(450px, 40vw);
+    /* Responsive image size */
+    position: relative;
+    left: 7%;
+}
+
+[class*="center"] {
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+
+/* Services */
+.center-services img {
+    width: 3rem;
+}
+
+.service-box-container {
+    margin: 2% 7% 0;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.service-box {
+    box-shadow: 0 0 0.3em #ccc;
+    padding: 5% 3%;
+    border: 0.1em solid #ccc;
+}
+
+.service-box:hover {
+    border-top: 0.5em solid #ff5a00;
+}
+
+.service-subtitle {
+    margin: 0.3em 0;
+    color: #ff5a00;
+    font-size: 1.125rem;
+}
+
+#btn-read,
+.btn-buy {
+    margin: 1% 0;
+    border: none;
+    background-color: #000;
+    padding: 0.625rem 1.875rem;
+    color: white;
+}
+
+#btn-read:hover,
+.btn-buy:hover {
+    margin: 1% 0;
+    border: 0.125rem solid #aaa;
+    background-color: #fff;
+    padding: 0.625rem 1.875rem;
+    color: black;
+}
+
+/* Fruits */
+.fruits-container {
+    margin: 5% 10%;
+}
+
+.fruits-text {
+    width: 85%;
+}
+
+.fruits-orange,
+.fruits-grapes,
+.fruits-guava {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.fruits-orange img,
+.fruits-grapes img,
+.fruits-guava img {
+    margin-top: 2%;
+    max-width: 100%;
+}
+
+.fruits-orange img {
+    height: 7.8em;
+    padding-right: 4%;
+}
+
+.fruits-grapes img {
+    height: 12.5em;
+    padding-right: 8%;
+}
+
+.fruits-guava img {
+    height: 10.6em;
+    padding-right: 6%;
+    margin-top: 3%;
+}
+
+.fruits-subtitle {
+    font-size: 1.5625rem;
+    font-weight: 400;
+}
+
+.fruits-text {
+    margin: 2% 0;
+}
+
+.wide {
+    position: relative;
+}
+
+#wide-text {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: clamp(2rem, 15vw, 6.875rem);
+    /* Fluid font size */
+    font-weight: bold;
+}
+
+#wide-pic {
+    width: 100%;
+    height: auto;
+}
+
+/* Testimonial */
+#client-pic {
+    padding: 2% 0;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.center-test {
+    position: relative;
+}
+
+.center-test p {
+
+    padding: 1% 15%;
+}
+
+#client-name {
+    margin-top: -2%;
+    font-size: 1.5625rem;
+    font-weight: 400;
+}
+
+/* Contact Us */
+.contact-form {
+    margin: 7% 13%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form input[type=text],
+input[type=tel],
+input[type=email] {
+    width: 100%;
+    display: block;
+    padding: 0.4em 7rem 0.4rem 0rem;
+    margin-top: 4%;
+    border: none;
+    border-bottom: #ccc 0.1em solid;
+
+}
+
+#msg {
+    margin: 2rem 0;
+}
+
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=email]:focus {
+    outline: none;
+}
+
+
+form input[type=submit] {
+    text-transform: uppercase;
+    background-color: #ff5a00;
+    margin: 0.1rem 0;
+    border: none;
+    padding: 0.3em 1.8em;
+    color: white;
+}
+
+#orange-dish {
+    position: absolute;
+    right: 0;
+    padding-bottom: 25%;
+    width: 15vw;
+}
+
+.contact-media {
+    display: flex;
+    margin: 0 20%;
+    gap: 15%;
+}
+
+.col-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 4%;
+}
+
+.logos img,
+.logos a {
+    width: 1.875rem;
+    text-decoration: none;
+}
+
+.subscribe {
+    margin-top: 15%;
+}
+
+.sub-field {
+    border-radius: 5px;
+    box-shadow: 0 0 0.3em #ccc;
+    padding-left: 2.5em;
+}
+
+#btn-sub {
+    background-color: #ff5a00;
+    margin: 10% 0;
+    border: none;
+    padding: 0.3em 1.8em;
+    color: white;
+}
+
+#btn-sub:focus {
+    outline: #000;
+}
+
+#footer {
+    position: relative;
+    text-align: center;
+    margin-top: 5%;
+    bottom: 0;
+    background-color: #e9e9e9;
+    padding: 1%;
+}
+
+#btn-contact:hover,
+.btn-buy:hover,
+#btn-read:hover {
+    border: 0.125em solid black;
+    background-color: white;
+    color: black;
+}
+
+#btn-shop:hover,
+#btn-sub:hover,
+form input[type=submit]:hover {
+    border: 0.125em solid #ff5a00;
+    background-color: white;
+    color: #ff5a00;
+}
+
+/* Responsive Additions */
+@media (max-width: 768px) {
+
+    .btn-home {}
+
+    nav .logo img {
+        width: 20%;
+
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    nav ul {
+        /* flex-direction: column; */
+        /* align-items: flex-start; */
+        margin-top: 1rem;
+    }
+
+    .welcome {
+        flex-direction: column;
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .welcome-text {
+        width: 100%;
+    }
+
+    #welcome_pic {
+        left: 0;
+        margin-top: 2rem;
+    }
+
+    .service-box-container,
+    .fruits-container,
+    .contact-form,
+    .contact-media {
+        flex-direction: column;
+        margin: 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .fruits-orange,
+    .fruits-grapes,
+    .fruits-guava {
+        flex-direction: column;
+    }
+
+    .fruits-orange img,
+    .fruits-grapes img,
+    .fruits-guava img {
+        width: 15rem;
+        margin-top: 1.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .fruits-grapes img {
+        width: 10rem;
+    }
+
+    #wide-text {
+        font-size: 8vw;
+    }
+
+    #orange-dish {
+        display: none;
+    }
+
+
+    .fruits-text {
+        width: 100%;
+    }
+
+    .subscribe {
+        margin-top: 5%;
+    }
+
+    #btn-sub {
+        background-color: #ff5a00;
+        margin: 1% 0;
+        border: none;
+        padding: 0.1em 1.2em;
+        color: white;
+    }
+}
