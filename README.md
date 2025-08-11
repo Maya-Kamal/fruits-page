@@ -39,6 +39,7 @@ The project is structured to keep files organized:
 The website is a static site and does not require a local server to run.
 
 ## Demo: 
+Preview Link: https://maya-kamal.github.io/fruits-page/
 
 ## Usage 🖱️
 
